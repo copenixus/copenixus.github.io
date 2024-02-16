@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Özgeçmiş</h1>
+
+<div id="ozgecmis"></div>
+
+<script>
+    // Özgeçmiş bilgileri
+    var ozgecmisBilgileri = {
+        ad: "Adınız Soyadınız",
+        dogumTarihi: "01 Ocak 1990",
+        sehir: "Şehir, Ülke",
+        egitim: "Üniversite - Bölüm",
+        tecrube: "İş Deneyimi",
+        yetenekler: ["JavaScript", "HTML", "CSS", "Python"],
+        dil: ["Türkçe", "İngilizce"]
+        // ... diğer bilgiler
+    };
+
+    // Özgeçmiş bilgilerini HTML'e ekleme
+    var ozgecmisDiv = document.getElementById("ozgecmis");
+
+    ozgecmisDiv.innerHTML += "<p><strong>Ad:</strong> " + ozgecmisBilgileri.ad + "</p>";
+    ozgecmisDiv.innerHTML += "<p><strong>Doğum Tarihi:</strong> " + ozgecmisBilgileri.dogumTarihi + "</p>";
+    ozgecmisDiv.innerHTML += "<p><strong>Şehir:</strong> " + ozgecmisBilgileri.sehir + "</p>";
+    ozgecmisDiv.innerHTML += "<p><strong>Eğitim:</strong> " + ozgecmisBilgileri.egitim + "</p>";
+    ozgecmisDiv.innerHTML += "<p><strong>İş Deneyimi:</strong> " + ozgecmisBilgileri.tecrube + "</p>";
+
+    ozgecmisDiv.innerHTML += "<p><strong>Yetenekler:</strong> " + ozgecmisBilgileri.yetenekler.join(", ") + "</p>";
+    ozgecmisDiv.innerHTML += "<p><strong>Dil Bilgisi:</strong> " + ozgecmisBilgileri.dil.join(", ") + "</p>";
+    // ... diğer bilgileri ekleme
+
+</script>
+
+</body>
+</html>
