@@ -1,95 +1,56 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adınız Soyadınız - Yazılım Geliştirici</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #ffffff; /* Beyaz arka plan */
-            color: #333; /* Ana metin rengi */
-        }
-
-        header {
-            text-align: center;
-            background-color: #64b5f6; /* Su yeşili başlık arka plan rengi */
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #ffffff; /* Başlık metin rengi */
-        }
-
-        h2 {
-            color: #64b5f6; /* Alt başlık rengi */
-        }
-
-        p {
-            color: #555;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            color: #777;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Portföyüm</title>
 </head>
 <body>
 
 <header>
-    <h1>Adınız Soyadınız</h1>
-    <p>Yazılım Geliştirici</p>
+    <div class="container">
+        <h1>Adınız Soyadınız</h1>
+        <p>Web Geliştirici</p>
+    </div>
 </header>
 
-<section>
-    <h2 style="color: #64b5f6;">İletişim Bilgileri</h2>
-    <ul>
-        <li style="color: #64b5f6;">E-posta: your.email@example.com</li>
-        <li style="color: #64b5f6;">LinkedIn: linkedin.com/in/yourusername</li>
-        <li style="color: #64b5f6;">GitHub: github.com/yourusername</li>
-    </ul>
+<section id="about">
+    <div class="container">
+        <h2>Hakkımda</h2>
+        <p>Merhaba, ben Adınız Soyadınız. Web geliştirme alanında deneyimli bir profesyonelim.</p>
+    </div>
 </section>
 
-<section>
-    <h2 style="color: #64b5f6;">Eğitim</h2>
-    <p>Üniversite Adı, Bölüm Adı - Mezuniyet Yılı</p>
+<section id="portfolio">
+    <div class="container">
+        <h2>Portföy</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Proje 1">
+            <h3>Proje Başlığı 1</h3>
+            <p>Proje açıklaması buraya.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Proje 2">
+            <h3>Proje Başlığı 2</h3>
+            <p>Proje açıklaması buraya.</p>
+        </div>
+    </div>
 </section>
 
-<section>
-    <h2 style="color: #64b5f6;">Yetenekler</h2>
-    <ul>
-        <li style="color: #64b5f6;">Programlama Dilleri: C#, JavaScript, Python</li>
-        <li style="color: #64b5f6;">Web Teknolojileri: HTML, CSS, React</li>
-        <li style="color: #64b5f6;">Veritabanları: MySQL, MongoDB</li>
-    </ul>
-</section>
-
-<section>
-    <h2 style="color: #64b5f6;">Deneyim</h2>
-    <p>Şirket Adı - Pozisyon - Çalışma Yılı</p>
-    <ul>
-        <li style="color: #64b5f6;">Proje 1: Açıklama</li>
-        <li style="color: #64b5f6;">Proje 2: Açıklama</li>
-    </ul>
+<section id="contact">
+    <div class="container">
+        <h2>İletişim</h2>
+        <p>E-posta: info@example.com</p>
+        <p>LinkedIn: linkedin.com/in/example</p>
+        <p>GitHub: github.com/example</p>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Adınız Soyadınız. Tüm hakları saklıdır.</p>
+    <div class="container">
+        <p>&copy; 2024 Adınız Soyadınız. Tüm hakları saklıdır.</p>
+    </div>
 </footer>
 
 </body>
